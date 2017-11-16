@@ -21,11 +21,13 @@ bubbleDOM.appendChild(anchorsBar);
 var selection = '';
 
 function showBubble(e) {
-    selection = (document.all) ? document.selection.createRange().text : document.getSelection();
-    renderBubble(e.clientX, e.clientY, selection);
+    selection = (document.all) ? document.selection.createRange().text : document.getSelection().toString();;
+    if (selection.length > 0)
+        renderBubble(e.clientX, e.clientY, selection);
 }
 function resetBubble(e) {
     topSearchBar.value = '';
+    bubbleDOM.style.display = 'none';
 }
 
 document.onmousedown = resetBubble;
