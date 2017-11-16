@@ -1,3 +1,8 @@
+
+* {
+    box-sizing: border-box;
+}
+
 .selection_bubble {
     display: none;
     background-color: #eee;
@@ -8,6 +13,7 @@
     border: 1px solid #999;
     border-radius: 5px;
     z-index: 2;
+    max-width: 300px;
 }
 
 .bubbleTopSearchBar {
@@ -19,3 +25,46 @@
 
 .bubbleAnchors {
 }
+
+.shape-list {
+    display: block;
+    clear: both;
+    float: left;
+}
+
+.shape-item {
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+
+.shape-item-inner {
+    display: block;
+    background-color: #3f199b;
+}
+
+.column-one .shape-item {
+    float: left;
+    width: 100%;
+}
+
+.column-two .shape-item {
+    float: left;
+    width: 50%;
+}
+
+.column-three .shape-item{
+    float: left;
+    width: 33.333%;
+}
+
+.column-four .shape-item{
+    float: left;
+    width: 25%;
+}
+
+.column-five .shape-item{
+    float: left;
+    width: 20%;
+}
+
