@@ -33,7 +33,9 @@ label.c {
 }
 
 .mdl-layout__content {
-    margin: 10px;
+    max-width: 400px;
+    margin: 100px auto;
     text-align: justify;
     text-align-last: right;
+    line-height: 2;
 }

@@ -32,15 +32,32 @@
     float: left;
 }
 
+.list-heading {
+    background-color: #666;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    padding: 5px 10px;
+    margin: 5px 0;
+    float: left;
+    width: 100%;
+}
+
 .shape-item {
     display: block;
     padding: 5px;
     text-align: center;
+    font-size: 60px;
+    color: #999999;
+}
+
+.shape-item:hover .shape-item-inner {
+    background-color: white;
+    border-radius: 5px;
 }
 
 .shape-item-inner {
     display: block;
-    background-color: #3f199b;
 }
 
 .column-one .shape-item {
