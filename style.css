@@ -1,10 +1,14 @@
-span.q {
-    /* color: #ca3333; */
-    background-color: #3f199b;
+span.q, span[data-markerid='1-2'] {
+    background-image: url('assets/images/-_mountain.svg');
 }
 
 span.c {
-    background-color: #df1818;
+    background-image: url('assets/images/-_triangle.svg');
+}
+
+span.c, span.q {
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
 }
 
 .werr {
