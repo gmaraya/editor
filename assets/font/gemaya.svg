@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="gemaya" horiz-adv-x="1000" >
+<font-face font-family="gemaya" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="mountain" unicode="&#xe803;" d="M571 443l250-266h-642l250 266h142m5 12h-152l-273-290h698l-273 290z m377-335h-906l358 380h190z m-670 102h434l-165 176h-103z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

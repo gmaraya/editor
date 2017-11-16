@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'gemaya';
+    src: url('../assets/font/gemaya.eot?78010272');
+    src: url('../assets/font/gemaya.eot?78010272#iefix') format('embedded-opentype'), url('../assets/font/gemaya.woff2?78010272') format('woff2'), url('../assets/font/gemaya.woff?78010272') format('woff'), url('../assets/font/gemaya.ttf?78010272') format('truetype'), url('../assets/font/gemaya.svg?78010272#gemaya') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 span.q {
     /* color: #ca3333; */
     background-color: #3f199b;
