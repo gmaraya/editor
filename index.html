@@ -8,17 +8,17 @@
     <link href="bubble.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="jquery-1.12.4.min.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</head>
-<body>
+
     <!-- custom-element -->
     <script src="BaseElement.js"></script>
     <script src="selection-maker.js"></script>
     <script src="bubble.js"></script>
 
     <script src="GmarayaApi.js"></script>
-
+</head>
+<body>
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
@@ -58,8 +58,8 @@
     <script id="popup-content" type="text/html">
     <div class="popup-content-inner">
         <div class="shape-list column-one">
-            <a class="shape-item" href="#"><span class="shape-item-inner">Shape #1</span></a>
-            <a class="shape-item" href="#"><span class="shape-item-inner">Shape #1</span></a>
+            <a class="shape-item" href="#" data-action="c"><span class="shape-item-inner">Shape #1</span></a>
+            <a class="shape-item" href="#" data-action="q"><span class="shape-item-inner">Shape #1</span></a>
             <a class="shape-item" href="#"><span class="shape-item-inner">Shape #1</span></a>
             <a class="shape-item" href="#"><span class="shape-item-inner">Shape #1</span></a>
             <a class="shape-item" href="#"><span class="shape-item-inner">Shape #1</span></a>
