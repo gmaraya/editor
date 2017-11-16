@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gmaraya</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+  <body>
+	<!-- custom-element -->
+	<script src="BaseElement.js"></script>
+	<script src="selection-maker.js"></script> 
+	
+	<script src="GmarayaApi.js"></script> 
+
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Gmaraya</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">About</a>
+        <a class="mdl-navigation__link" href="">Team</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">	
+        <h1>Team</h1>
+				<!-- Aarons stuff -->
+            
+                <!-- Wide card with share menu button -->
+<style>
+        .demo-card-wide.mdl-card {
+          width: 512px;
+        }
+        .demo-card-wide > .mdl-card__title {
+          color: #fff;
+          height: 176px;
+          background: url('assets/welcome_card.jpg') center / cover;
+        }
+        .demo-card-wide > .mdl-card__menu {
+          color: #fff;
+        }
+        </style>
+        
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Welcome</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris sagittis pellentesque lacus eleifend lacinia...
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              Get Started
+            </a>
+          </div>
+          <div class="mdl-card__menu">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+              <i class="material-icons">share</i>
+            </button>
+          </div>
+        </div>
+
+		</div>
+  </main>
+</div>
+
+
+	<script>
+
+		function onSelection(newMarker) {
+			GmarayaApi.AddMarker(newMarker, gmarayaObj);
+		}
+
+		function onUnselection(marker) {
+			GmarayaApi.RemoveMarker(marker, gmarayaObj);
+		}
+		
+		const savedMarkers = {
+		  "path": "Ecclesiastes 5",
+		  "lang": "he",
+		  "text": ["אַל־תְּבַהֵ֨ל עַל־פִּ֜יךָ וְלִבְּךָ֧ אַל־יְמַהֵ֛ר לְהוֹצִ֥יא דָבָ֖ר לִפְנֵ֣י הָאֱלֹהִ֑ים כִּ֣י הָאֱלֹהִ֤ים בַּשָּׁמַ֙יִם֙ וְאַתָּ֣ה עַל־הָאָ֔רֶץ עַֽל־כֵּ֛ן יִהְי֥וּ דְבָרֶ֖יךָ מְעַטִּֽים׃", "כִּ֛י בָּ֥א הַחֲל֖וֹם בְּרֹ֣ב עִנְיָ֑ן וְק֥וֹל כְּסִ֖יל בְּרֹ֥ב דְּבָרִֽים׃", "כַּאֲשֶׁר֩ תִּדֹּ֨ר נֶ֜דֶר לֵֽאלֹהִ֗ים אַל־תְּאַחֵר֙ לְשַׁלְּמ֔וֹ כִּ֛י אֵ֥ין חֵ֖פֶץ בַּכְּסִילִ֑ים אֵ֥ת אֲשֶׁר־תִּדֹּ֖ר שַׁלֵּֽם׃", "ט֖וֹב אֲשֶׁ֣ר לֹֽא־תִדֹּ֑ר מִשֶׁתִּדּ֖וֹר וְלֹ֥א תְשַׁלֵּֽם׃", "אַל־תִּתֵּ֤ן אֶת־פִּ֙יךָ֙ לַחֲטִ֣יא אֶת־בְּשָׂרֶ֔ךָ וְאַל־תֹּאמַר֙ לִפְנֵ֣י הַמַּלְאָ֔ךְ כִּ֥י שְׁגָגָ֖ה הִ֑יא לָ֣מָּה יִקְצֹ֤ף הָֽאֱלֹהִים֙ עַל־קוֹלֶ֔ךָ וְחִבֵּ֖ל אֶת־מַעֲשֵׂ֥ה יָדֶֽיךָ׃", "כִּ֣י בְרֹ֤ב חֲלֹמוֹת֙ וַהֲבָלִ֔ים וּדְבָרִ֖ים הַרְבֵּ֑ה כִּ֥י אֶת־הָאֱלֹהִ֖ים יְרָֽא׃", "אִם־עֹ֣שֶׁק רָ֠שׁ וְגֵ֨זֶל מִשְׁפָּ֤ט וָצֶ֙דֶק֙ תִּרְאֶ֣ה בַמְּדִינָ֔ה אַל־תִּתְמַ֖הּ עַל־הַחֵ֑פֶץ כִּ֣י גָבֹ֜הַּ מֵעַ֤ל גָּבֹ֙הַ֙ שֹׁמֵ֔ר וּגְבֹהִ֖ים עֲלֵיהֶֽם׃", "וְיִתְר֥וֹן אֶ֖רֶץ בַּכֹּ֣ל היא [ה֑וּא] מֶ֥לֶךְ לְשָׂדֶ֖ה נֶעֱבָֽד׃", "אֹהֵ֥ב כֶּ֙סֶף֙ לֹא־יִשְׂבַּ֣ע כֶּ֔סֶף וּמִֽי־אֹהֵ֥ב בֶּהָמ֖וֹן לֹ֣א תְבוּאָ֑ה גַּם־זֶ֖ה הָֽבֶל׃", "בִּרְבוֹת֙ הַטּוֹבָ֔ה רַבּ֖וּ אוֹכְלֶ֑יהָ וּמַה־כִּשְׁרוֹן֙ לִבְעָלֶ֔יהָ כִּ֖י אִם־ראית [רְא֥וּת] עֵינָֽיו׃", "מְתוּקָה֙ שְׁנַ֣ת הָעֹבֵ֔ד אִם־מְעַ֥ט וְאִם־הַרְבֵּ֖ה יֹאכֵ֑ל וְהַשָּׂבָע֙ לֶֽעָשִׁ֔יר אֵינֶ֛נּוּ מַנִּ֥יחַֽ ל֖וֹ לִישֽׁוֹן׃", "יֵ֚שׁ רָעָ֣ה חוֹלָ֔ה רָאִ֖יתִי תַּ֣חַת הַשָּׁ֑מֶשׁ עֹ֛שֶׁר שָׁמ֥וּר לִבְעָלָ֖יו לְרָעָתֽוֹ׃", "וְאָבַ֛ד הָעֹ֥שֶׁר הַה֖וּא בְּעִנְיַ֣ן רָ֑ע וְהוֹלִ֣יד בֵּ֔ן וְאֵ֥ין בְּיָד֖וֹ מְאֽוּמָה׃", "כַּאֲשֶׁ֤ר יָצָא֙ מִבֶּ֣טֶן אִמּ֔וֹ עָר֛וֹם יָשׁ֥וּב לָלֶ֖כֶת כְּשֶׁבָּ֑א וּמְא֙וּמָה֙ לֹא־יִשָּׂ֣א בַעֲמָל֔וֹ שֶׁיֹּלֵ֖ךְ בְּיָדֽוֹ׃", "וְגַם־זֹה֙ רָעָ֣ה חוֹלָ֔ה כָּל־עֻמַּ֥ת שֶׁבָּ֖א כֵּ֣ן יֵלֵ֑ךְ וּמַה־יִּתְר֣וֹן ל֔וֹ שֶֽׁיַּעֲמֹ֖ל לָרֽוּחַ׃", "גַּ֥ם כָּל־יָמָ֖יו בַּחֹ֣שֶׁךְ יֹאכֵ֑ל וְכָעַ֥ס הַרְבֵּ֖ה וְחָלְי֥וֹ וָקָֽצֶף׃", "הִנֵּ֞ה אֲשֶׁר־רָאִ֣יתִי אָ֗נִי ט֣וֹב אֲשֶׁר־יָפֶ֣ה לֶֽאֶכוֹל־וְ֠לִשְׁתּוֹת וְלִרְא֨וֹת טוֹבָ֜ה בְּכָל־עֲמָל֣וֹ ׀ שֶׁיַּעֲמֹ֣ל תַּֽחַת־הַשֶּׁ֗מֶשׁ מִסְפַּ֧ר יְמֵי־חיו [חַיָּ֛יו] אֲשֶׁר־נָֽתַן־ל֥וֹ הָאֱלֹהִ֖ים כִּי־ה֥וּא חֶלְקֽוֹ׃", "גַּ֣ם כָּֽל־הָאָדָ֡ם אֲשֶׁ֣ר נָֽתַן־ל֣וֹ הָאֱלֹהִים֩ עֹ֨שֶׁר וּנְכָסִ֜ים וְהִשְׁלִיט֨וֹ לֶאֱכֹ֤ל מִמֶּ֙נּוּ֙ וְלָשֵׂ֣את אֶת־חֶלְק֔וֹ וְלִשְׂמֹ֖חַ בַּעֲמָל֑וֹ זֹ֕ה מַתַּ֥ת אֱלֹהִ֖ים הִֽיא׃", "כִּ֚י לֹ֣א הַרְבֵּ֔ה יִזְכֹּ֖ר אֶת־יְמֵ֣י חַיָּ֑יו כִּ֧י הָאֱלֹהִ֛ים מַעֲנֶ֖ה בְּשִׂמְחַ֥ת לִבּֽוֹ׃"],
+		  "markers": {
+			"878_917": {
+			  "startOffset": 878,
+			  "endOffset": 917,
+			  "text": "לֹ֥א תְשַׁלֵּֽם׃ אַל־תִּתֵּ֤ן אֶת־פִּ֙י",
+			  "type": "q"
+			},
+			"844_1268": {
+			  "startOffset": 844,
+			  "endOffset": 1268,
+			  "text": "מוֹת֙ וַהֲבָלִ֔ים וּדְבָרִ֖ים הַרְבֵּ֑ה כִּ֥י אֶת־הָאֱלֹהִ֖ים יְרָֽא׃ אִם־עֹ֣שֶׁק רָ֠שׁ וְגֵ֨זֶל מִשְׁפָּ֤ט וָצֶ֙דֶק֙ תִּרְאֶ֣ה בַמְּדִינָ֔ה אַל־תִּתְמַ֖הּ עַל־הַחֵ֑פֶץ כִּ֣י גָבֹ֜הַּ מֵעַ֤ל גָּבֹ֙הַ֙ שֹׁמֵ֔ר וּגְבֹהִ֖ים עֲלֵיהֶֽם׃ וְיִתְר֥וֹן אֶ֖רֶץ בַּכֹּ֣ל היא [ה֑וּא] מֶ֥לֶךְ לְשָׂדֶ֖ה נֶעֱבָֽד׃ אֹהֵ֥ב כֶּ֙סֶף֙ לֹא־יִשְׂבַּ֣ע כֶּ֔סֶף וּמִֽי־אֹהֵ֥ב בֶּהָמ֖וֹן לֹ֣א תְבוּאָ֑ה גַּם־זֶ֖ה הָֽבֶל׃ בִּרְבוֹת֙ הַטּוֹבָ֔ה רַבּ֖",
+			  "type": "c"
+			},
+			"282_306": {
+			  "startOffset": 282,
+			  "endOffset": 306,
+			  "text": "רֶץ עַֽל־כֵּ֛ן יִהְי֥וּ ",
+			  "type": "q"
+			}
+		  }
+		}
+		
+
+		let gmarayaObj = {};
+
+		GmarayaApi.LoadText('Ecclesiastes.5').then(data => {
+
+			gmarayaObj = GmarayaApi.CreateGmarayaObj(data, 'he');
+			
+			const selector = document.querySelector('.load-text');
+			selector.innerHTML = gmarayaObj.text.join(' ');
+
+			//GmarayaApi.RunderMarkers(selector, savedMarkers);
+
+		});
+	</script> 
+  </body>
+</html>
