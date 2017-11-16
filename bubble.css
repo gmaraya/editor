@@ -5,8 +5,14 @@
     left: 0;
     background-color: yellow;
     border: 1px solid black;
-    z-index:2;
+    z-index: 2;
 }
 
-.top_search_bar {
+.bubbleTopSearchBar {
+}   
+
+.bubbleBody {
+}
+
+.bubbleAnchors {
 }
