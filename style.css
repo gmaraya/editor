@@ -1,0 +1,33 @@
+span.q {
+  /* color: #ca3333; */
+  background-color: #3f199b;
+}
+
+span.c {
+  background-color: #df1818;
+}
+
+.werr {
+  position: relative;
+}
+
+.shwoder {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  z-index: 1;
+  /* pointer-events: none; */
+}
+
+.text {
+  pointer-events: none;
+  user-select: none;
+}
+
+label.q {
+  background-color: #7c8af1;
+}
+
+label.c {
+  background-color: #e17777;
+}
