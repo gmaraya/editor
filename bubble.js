@@ -17,7 +17,6 @@ var anchorsBar = document.createElement('div');
 anchorsBar.classList.add('bubbleAnchors');
 bubbleDOM.appendChild(anchorsBar);
 
-
 var selection = '';
 
 function showBubble(e) {

@@ -1,33 +1,39 @@
 span.q {
-  /* color: #ca3333; */
-  background-color: #3f199b;
+    /* color: #ca3333; */
+    background-color: #3f199b;
 }
 
 span.c {
-  background-color: #df1818;
+    background-color: #df1818;
 }
 
 .werr {
-  position: relative;
+    position: relative;
 }
 
 .shwoder {
-  position: absolute;
-  visibility: hidden;
-  top: 0;
-  z-index: 1;
-  /* pointer-events: none; */
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    z-index: 1;
+    /* pointer-events: none; */
 }
 
 .text {
-  pointer-events: none;
-  user-select: none;
+    pointer-events: none;
+    user-select: none;
 }
 
 label.q {
-  background-color: #7c8af1;
+    background-color: #7c8af1;
 }
 
 label.c {
-  background-color: #e17777;
+    background-color: #e17777;
+}
+
+.mdl-layout__content {
+    margin: 10px;
+    text-align: justify;
+    text-align-last: right;
 }
