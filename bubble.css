@@ -36,11 +36,17 @@
     display: block;
     padding: 5px;
     text-align: center;
+    font-size: 60px;
+    color: #999999;
+}
+
+.shape-item:hover .shape-item-inner {
+    background-color: white;
+    border-radius: 5px;
 }
 
 .shape-item-inner {
     display: block;
-    background-color: #3f199b;
 }
 
 .column-one .shape-item {
