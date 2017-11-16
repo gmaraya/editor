@@ -20,9 +20,10 @@ bubbleDOM.appendChild(anchorsBar);
 var selection = '';
 
 function showBubble(e) {
-    selection = (document.all) ? document.selection.createRange().text : document.getSelection().toString();;
-    if (selection.length > 0)
-        renderBubble(e.clientX, e.clientY, selection);
+    selection = (document.all) ? document.selection.createRange().text : document.getSelection().toString();
+    if (selection.length > 0) {
+        renderBubble(e.clientX, e.clientY);
+    }
 }
 function resetBubble(e) {
     topSearchBar.value = '';
@@ -37,8 +38,10 @@ if (!document.all) {
 }
 
 // Move that bubble to the appropriate location.
-function renderBubble(mouseX, mouseY, selection) {
-    bubbleBody.innerHTML = selection;
+function renderBubble(mouseX, mouseY) {
+    var popupContent = jQuery( '#popup-content');
+    bubbleBody.innerHTML = popupContent.html();
+
     bubbleDOM.style.top = mouseY + 'px';
     bubbleDOM.style.left = mouseX + 'px';
     bubbleDOM.style.display = 'block';
