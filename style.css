@@ -8,7 +8,8 @@ span.c {
 
 span.c, span.q {
     background-repeat: no-repeat;
-    background-size: 100% 130%;
+    background-size: 97% 110%;
+    display: inline-block;
 }
 
 .werr {
@@ -38,26 +39,36 @@ label.c {
 
 .mdl-layout__content {
     max-width: 400px;
-    margin: 100px auto;
+    margin: 50px auto;
     text-align: justify;
     text-align-last: right;
     line-height: 2.5;
+    padding: 5px;
 }
 
-.mdl-layout__header-row{
-    background-position:center center;
-    background-size:contain;
-    background-color:#fff !important;
+.mdl-layout__header {
+    box-shadow: none;
+    margin: 10px;
 }
-.logo {
-    margin: 50px auto 0 auto;
-    background: url('./assets/images/logo.png') no-repeat;
-    width: 360px;
-    height: 300px;
+
+.mdl-layout__header-row {
+    background-position: center center;
+    background-size: contain;
+    background-color: #fff !important;
+    background-image: url('./assets/images/logo.png');
+    background-repeat: no-repeat;
+}
+
+.mdl-layout__drawer-button {
+    margin-top: 13px;
 }
 
 .mdl-layout > footer {
     margin: 20px;
+}
+
+footer .mdl-button:hover {
+    opacity: 0.8;
 }
 
 .mdl-button--fab.mdl-button--colored {

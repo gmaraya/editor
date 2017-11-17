@@ -3,6 +3,8 @@ jQuery(function ($) {
         console.log('LOG: ' + msg);
     }
 
+    var mainContent = document.getElementById("mainContent");
+
     // Add bubble
     var bubbleDOM = document.createElement('div');
     bubbleDOM.classList.add('selection_bubble');
@@ -61,11 +63,12 @@ jQuery(function ($) {
         bubbleDOM.style.display = 'none';
     }
 
-    //document.onmousedown = resetBubble;
-    document.onmouseup = showBubble;
+    //mainContent.onmousedown = resetBubble;
+
+    mainContent.onmouseup = showBubble;
 
     if (!document.all) {
-        document.captureEvents(Event.MOUSEUP);
+        mainContent.captureEvents(Event.MOUSEUP);
     }
 
     // Move that bubble to the appropriate location.
