@@ -83,7 +83,7 @@ aside#addBoxes {
     position: fixed;
     display: flex;
     flex-direction: column;
-    left: 200px;
+    left: 10%;
     top: 140px;
 }
 
@@ -91,16 +91,21 @@ aside#addBoxes {
         display: none;
         min-height: 70px;
         margin: 10px;
-        text-align:right;
+        text-align: right;
+        font-size: 1em;
+        font-family: Arial;
     }
 
-#mainTitle {
-    text-align:center;
+#addSubject {
+    background-color: #D6E4F0;
 }
 
-    #addSubject {
-        background-color:#D6E4F0;
-    }
-    #addStructure {
-        background-color:#F1BBD5;
-    }
+#addStructure {
+    background-color: #F1BBD5;
+}
+
+#mainTitle {
+    text-align: center;
+    font-size: 3em;
+    font-family: serif,"Arial",sans-serif;
+}
