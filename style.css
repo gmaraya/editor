@@ -48,8 +48,18 @@ label.c {
     background-position:center center;
     background-size:contain;
     background-color:#fff !important;
+}
+.logo {
     margin: 50px auto 0 auto;
-    background: url('./assets/images/logo.png') no-repeat ; 
-    width:360px; 
-    height:300px;
+    background: url('./assets/images/logo.png') no-repeat;
+    width: 360px;
+    height: 300px;
+}
+
+.mdl-layout > footer {
+    margin: 20px;
+}
+
+.mdl-button--fab.mdl-button--colored {
+    background: rgb(63, 81, 181);
 }
