@@ -5,24 +5,18 @@
     <meta name="viewport" content="width=device-width">
     <title>Gmaraya</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdn.rtlcss.com/mdl/1.2.1/material.rtl.min.css"
+          integrity="sha384-1z92ngOM16ZY2CickWgUrydff0ExYv2Fn8/6WUwsWxgrcJym3w+ogWivpi3nEh0G"
+          crossorigin="anonymous">
     <link href="bubble.css" rel="stylesheet" />
     <link href="assets/styles/gemaya.css" rel="stylesheet" />
-
+    <link href="style.css" rel="stylesheet">
     <script src="jquery-1.12.4.min.js"></script>
-
-    <link
-    rel="stylesheet"
-    href="https://cdn.rtlcss.com/mdl/1.2.1/material.rtl.min.css"
-    integrity="sha384-1z92ngOM16ZY2CickWgUrydff0ExYv2Fn8/6WUwsWxgrcJym3w+ogWivpi3nEh0G"
-    crossorigin="anonymous">
-  
-  <!-- Latest compiled and minified JavaScript -->
-  <script 
-    src="https://cdn.rtlcss.com/mdl/1.2.1/material.min.js"
-    integrity="sha384-Llr4wcq+yhgKO4ZQRN7Sx88cvQneoOOxcysisJKroD8nKQA7y0NyriabEaMYsvWW"
-    crossorigin="anonymous"></script>
-
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.rtlcss.com/mdl/1.2.1/material.min.js"
+            integrity="sha384-Llr4wcq+yhgKO4ZQRN7Sx88cvQneoOOxcysisJKroD8nKQA7y0NyriabEaMYsvWW"
+            crossorigin="anonymous"></script>
 
     <!-- custom-element -->
     <script src="BaseElement.js"></script>
@@ -72,17 +66,21 @@
         </main>
 
         <aside id="addBoxes">
+            <textarea id="addSubject">
 
+            </textarea>
+            <textarea id="addStructure">
+            </textarea>
         </aside>
 
         <footer>
             <!-- Colored raised button -->
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored subject">
-                + נושא
+                נושא +
             </button>
             <!-- Colored raised button -->
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored structure">
-                + מבנה
+                מבנה +
             </button>
         </footer>
     </div>
