@@ -151,4 +151,7 @@
 .icon--_triangle:before {
     content: '\e81a';
 }
-/* '' */
+
+.icon--_rectangle:before {
+    content: '\e70e';
+}
