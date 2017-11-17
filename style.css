@@ -83,8 +83,8 @@ aside#addBoxes {
     position: fixed;
     display: flex;
     flex-direction: column;
-    left: 10%;
-    top: 100px;
+    left: 200px;
+    top: 140px;
 }
 
     aside#addBoxes textarea {
@@ -97,3 +97,10 @@ aside#addBoxes {
 #mainTitle {
     text-align:center;
 }
+
+    #addSubject {
+        background-color:#D6E4F0;
+    }
+    #addStructure {
+        background-color:#F1BBD5;
+    }
