@@ -43,3 +43,11 @@ label.c {
     text-align-last: right;
     line-height: 2;
 }
+
+.mdl-layout > footer {
+    margin:20px;
+}
+
+.mdl-button--fab.mdl-button--colored {
+    background: rgb(63, 81, 181);
+}
