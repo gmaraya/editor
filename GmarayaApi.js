@@ -1,7 +1,29 @@
 const BASE_URL = 'https://www.sefaria.org/api/texts/';
+const DAF_URL = 'https://www.sefaria.org/api/calendars/';
+//const DAF_URL = 'https://www.sefaria.org/api/texts/Bava_Kamma.2a';
 
 
 class GmarayaApi {
+	static dafYomi() {
+		fetch(DAF_URL)
+		.then(
+		  function(response) {
+			if (response.status !== 200) {
+			  console.log('Looks like there was a problem. Status Code: ' +
+				response.status);
+			  return;
+			}
+	  
+			// Examine the text in the response
+			response.json().then(function(data) {
+			  console.log(data);
+			});
+		  }
+		)
+		.catch(function(err) {
+		  console.log('Fetch Error :-S', err);
+		});
+	}
 
 	static LoadText(path) {
 		return fetch(BASE_URL + path, {
