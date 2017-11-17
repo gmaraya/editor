@@ -67,10 +67,6 @@ jQuery(function ($) {
 
     mainContent.onmouseup = showBubble;
 
-    if (!document.all) {
-        mainContent.captureEvents(Event.MOUSEUP);
-    }
-
     // Move that bubble to the appropriate location.
     function renderBubble(mouseX, mouseY) {
         $(bubbleBody).on('click', 'a', function (e) {
