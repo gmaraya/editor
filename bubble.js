@@ -28,10 +28,19 @@ jQuery(function ($) {
         getRangeSelection,
         popupOpened = false;
 
-    function addClassToSelection(range, markerId) {
+    function addClassToSelection(range, markerId, action) {
         let newNode = document.createElement("span");
         newNode.setAttribute('data-markerid', markerId);
-        newNode.classList.add("q");
+        switch (action) {
+            case "mountain":
+                newNode.classList.add("mountain");
+                break;
+            case "rectangle":
+                newNode.classList.add("rec");
+                break;
+            default:
+                break;
+        }
         range.surroundContents(newNode);
     }
 
@@ -80,7 +89,7 @@ jQuery(function ($) {
                 return;
             }
 
-            addClassToSelection(getRangeSelection, getRangeSelection.startOffset + '_' + getRangeSelection.endOffset);
+            addClassToSelection(getRangeSelection, getRangeSelection.startOffset + '_' + getRangeSelection.endOffset, action);
         });
 
         var popupContent = jQuery('#popup-content');

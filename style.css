@@ -1,12 +1,17 @@
-span.q, span[data-markerid='1-2'] {
+span.mountain, span[data-markerid='1-2']{
     background-image: url('assets/images/-_mountain.svg');
+}
+
+span.rec {
+    border:1px solid black;
 }
 
 span.c {
     background-image: url('assets/images/-_triangle.svg');
 }
 
-span.c, span.q {
+
+span.c, span.mountain {
     background-repeat: no-repeat;
     background-size: 97% 110%;
     display: inline-block;
@@ -43,7 +48,7 @@ label.c {
     text-align: justify;
     text-align-last: right;
     line-height: 2.5;
-    padding: 5px;
+    padding: 0 1em;
 }
 
 .mdl-layout__header {

@@ -41,7 +41,6 @@
             const selector = document.querySelector('.load-text');
             selector.innerHTML = gmarayaObj.text.join(' ');
 
-
             $("#mainTitle").html(e.currentTarget.innerText);
 
             //GmarayaApi.RunderMarkers(selector, savedMarkers);
