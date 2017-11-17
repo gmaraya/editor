@@ -48,7 +48,7 @@ label.c {
     text-align: justify;
     text-align-last: right;
     line-height: 2.5;
-    padding: 5px;
+    padding: 0 1em;
 }
 
 .mdl-layout__header {
