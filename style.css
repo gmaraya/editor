@@ -78,3 +78,8 @@ footer .mdl-button.subject {
 footer .mdl-button.structure {
     background: rgb(181, 63, 175) !important;
 }
+
+
+aside.addBoxes{
+    position:fixed;
+}
