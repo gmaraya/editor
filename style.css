@@ -71,10 +71,10 @@ footer .mdl-button:hover {
     opacity: 0.8;
 }
 
-.mdl-button--fab.subject {
+footer .mdl-button.subject {
     background: rgb(63, 81, 181) !important;
 }
 
-.mdl-button--fab.structure {
+footer .mdl-button.structure {
     background: rgb(181, 63, 175) !important;
 }
