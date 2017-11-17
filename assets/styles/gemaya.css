@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'gemaya';
-    src: url('../font/gemaya.eot?78010272');
-    src: url('../font/gemaya.eot?78010272#iefix') format('embedded-opentype'), url('../font/gemaya.woff2?78010272') format('woff2'), url('../font/gemaya.woff?78010272') format('woff'), url('../font/gemaya.ttf?78010272') format('truetype'), url('../font/gemaya.svg?78010272#gemaya') format('svg');
+    src: url('../font/gemaya.eot?13907016');
+    src: url('../font/gemaya.eot?13907016#iefix') format('embedded-opentype'), url('../font/gemaya.woff2?13907016') format('woff2'), url('../font/gemaya.woff?13907016') format('woff'), url('../font/gemaya.ttf?13907016') format('truetype'), url('../font/gemaya.svg?13907016#gemaya') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +11,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'gemaya';
-    src: url('../font/gemaya.svg?78010272#gemaya') format('svg');
+    src: url('../font/gemaya.svg?13907016#gemaya') format('svg');
   }
 }
 */
@@ -44,7 +44,111 @@
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-mountain:before {
+.icon--_answer:before {
+    content: '\e800';
+}
+/* '' */
+.icon--_arrow:before {
+    content: '\e801';
+}
+/* '' */
+.icon--_bowtie:before {
+    content: '\e802';
+}
+/* '' */
+.icon--_colon:before {
     content: '\e803';
 }
 /* '' */
+.icon--_comma:before {
+    content: '\e804';
+}
+/* '' */
+.icon--_comma_connecter:before {
+    content: '\e805';
+}
+/* '' */
+.icon--_connector:before {
+    content: '\e806';
+}
+/* '' */
+.icon--_diamond:before {
+    content: '\e807';
+}
+/* '' */
+.icon--_dot_underline:before {
+    content: '\e808';
+}
+/* '' */
+.icon--_end_of_sugya:before {
+    content: '\e809';
+}
+/* '' */
+.icon--_house:before {
+    content: '\e80a';
+}
+/* '' */
+.icon--_inverse_triangle:before {
+    content: '\e80b';
+}
+/* '' */
+.icon--_kushya:before {
+    content: '\e80c';
+}
+/* '' */
+.icon--_line_underline:before {
+    content: '\e80d';
+}
+/* '' */
+.icon--_mishna:before {
+    content: '\e80e';
+}
+/* '' */
+.icon--_mountain:before {
+    content: '\e80f';
+}
+/* '' */
+.icon--_one_phrase:before {
+    content: '\e810';
+}
+/* '' */
+.icon--_period:before {
+    content: '\e811';
+}
+/* '' */
+.icon--_point:before {
+    content: '\e812';
+}
+/* '' */
+.icon--_question_mark:before {
+    content: '\e813';
+}
+/* '' */
+.icon--_rashi:before {
+    content: '\e814';
+}
+/* '' */
+.icon--_rebuttal:before {
+    content: '\e815';
+}
+/* '' */
+.icon--_shayla:before {
+    content: '\e816';
+}
+/* '' */
+.icon--_side_point:before {
+    content: '\e817';
+}
+/* '' */
+.icon--_squiggle_underline:before {
+    content: '\e818';
+}
+/* '' */
+.icon--_tosfot:before {
+    content: '\e819';
+}
+/* '' */
+.icon--_triangle:before {
+    content: '\e81a';
+}
+/* '' */
