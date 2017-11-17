@@ -109,3 +109,10 @@ aside#addBoxes {
     font-size: 3em;
     font-family: serif,"Arial",sans-serif;
 }
+
+.dafyomi {
+    position:absolute;
+    right:30%;
+    bottom:0;
+    margin: 20px auto;
+}
