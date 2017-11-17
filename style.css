@@ -1,15 +1,14 @@
-span.mountain, span[data-markerid='1-2']{
+span.mountain, span[data-markerid='1-2'] {
     background-image: url('assets/images/-_mountain.svg');
 }
 
 span.rec {
-    border:1px solid black;
+    border: 1px solid black;
 }
 
 span.c {
     background-image: url('assets/images/-_triangle.svg');
 }
-
 
 span.c, span.mountain {
     background-repeat: no-repeat;
@@ -116,8 +115,8 @@ aside#addBoxes {
 }
 
 .dafyomi {
-    position:absolute;
-    right:30%;
-    bottom:0;
+    position: absolute;
+    right: 30%;
+    bottom: 0;
     margin: 20px auto;
 }
