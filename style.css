@@ -116,3 +116,7 @@ aside#addBoxes {
     bottom:0;
     margin: 20px auto;
 }
+
+.mdl-navigation__link {
+    line-height:0px;
+}
