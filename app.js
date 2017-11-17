@@ -1,9 +1,9 @@
 ﻿jQuery(function ($) {
     $(".mdl-button.subject").click(function () {
-        $("#addSubject").show();
+        $("#addSubject").css("display","block");
     });
 
     $(".mdl-button.structure").click(function () {
-        $("#addStructure").show();
+        $("#addStructure").css("display", "block");
     });
 });

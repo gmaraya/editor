@@ -79,10 +79,17 @@ footer .mdl-button.structure {
     background: rgb(181, 63, 175) !important;
 }
 
-aside.addBoxes {
+aside#addBoxes {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 10%;
+    top: 100px;
 }
 
-#addSubject, #addStructure {
-    display: none;
-}
+    aside#addBoxes textarea {
+        display: none;
+        min-height: 70px;
+        margin: 10px;
+        text-align:right;
+    }
