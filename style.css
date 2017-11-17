@@ -39,7 +39,7 @@ label.c {
 
 .mdl-layout__content {
     max-width: 400px;
-    margin: 50px auto;
+    margin: 10px auto;
     text-align: justify;
     text-align-last: right;
     line-height: 2.5;
@@ -93,3 +93,7 @@ aside#addBoxes {
         margin: 10px;
         text-align:right;
     }
+
+#mainTitle {
+    text-align:center;
+}

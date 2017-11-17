@@ -9,6 +9,9 @@
 
     $("nav.mdl-navigation > a").click(function (e) {
         e.preventDefault();
+        if (!e.currentTarget.attributes['data-name'])
+            return;
+
         let txt = e.currentTarget.attributes['data-name'].value;
 
         let gmarayaObj = {};
@@ -19,9 +22,12 @@
             const selector = document.querySelector('.load-text');
             selector.innerHTML = gmarayaObj.text.join(' ');
 
+
+            $("#mainTitle").html(e.currentTarget.innerText);
+
             //GmarayaApi.RunderMarkers(selector, savedMarkers);
             $(".mdl-layout__drawer").removeClass("is-visible");
-
+            $(".mdl-layout__obfuscator").removeClass("is-visible");
         });
     });
 });

@@ -46,17 +46,17 @@
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">Title</span>
             <nav class="mdl-navigation">
-                    <a data-name="Bava_Kamma.2a" class="mdl-navigation__link" href="#0">בבא קמא</a>
-                    <a date-name ="Bava_Metzia.2a" class="mdl-navigation__link" href="">בבא מציעא</a>
-                    <a data-name ="Bava_Batra.2a" class="mdl-navigation__link" href="">בבא בתרא</a>
-                    <a data-name ="Sanhedrin.2a" class="mdl-navigation__link" href="">סנהדרין</a>
-                    <a data-name ="Makkot.2a" class="mdl-navigation__link" href="">מכות</a>
-                    <a data-name ="Shevuot.2a" class="mdl-navigation__link" href="">שבועות</a>
-                    <a data-name ="Avodah_Zarah.2a" class="mdl-navigation__link" href="">עבודה זרה</a>
-                    <a data-name ="Horayot.2a" class="mdl-navigation__link" href="">הוריות</a>
-                </nav>
+                <a data-name="Bava_Kamma.2a" class="mdl-navigation__link" href="">בבא קמא</a>
+                <a date-name="Bava_Metzia.2a" class="mdl-navigation__link" href="">בבא מציעא</a>
+                <a data-name="Bava_Batra.2a" class="mdl-navigation__link" href="">בבא בתרא</a>
+                <a data-name="Sanhedrin.2a" class="mdl-navigation__link" href="">סנהדרין</a>
+                <a data-name="Makkot.2a" class="mdl-navigation__link" href="">מכות</a>
+                <a data-name="Shevuot.2a" class="mdl-navigation__link" href="">שבועות</a>
+                <a data-name="Avodah_Zarah.2a" class="mdl-navigation__link" href="">עבודה זרה</a>
+                <a data-name="Horayot.2a" class="mdl-navigation__link" href="">הוריות</a>
+            </nav>
         </div>
-
+        <h3 id="mainTitle"></h3>
         <main id="mainContent" class="mdl-layout__content">
 
             <div class="page-content">
@@ -151,7 +151,7 @@
 
         let gmarayaObj = {};
 
-        GmarayaApi.LoadText('Ecclesiastes.5').then(data => {
+        GmarayaApi.LoadText('Bava_Kamma.2a').then(data => {
 
             gmarayaObj = GmarayaApi.CreateGmarayaObj(data, 'he');
 
@@ -159,7 +159,7 @@
             selector.innerHTML = gmarayaObj.text.join(' ');
 
             //GmarayaApi.RunderMarkers(selector, savedMarkers);
-
+            $("#mainTitle").html("בבא קמא");
         });
     </script>
 </body>
