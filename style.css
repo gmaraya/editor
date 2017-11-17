@@ -43,3 +43,11 @@ label.c {
     text-align-last: right;
     line-height: 2;
 }
+
+.logo {
+
+    margin: 50px auto 0 auto;
+    background: url('./assets/images/logo.png') no-repeat ; 
+    width:360px; 
+    height:300px;
+}
