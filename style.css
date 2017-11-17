@@ -44,8 +44,10 @@ label.c {
     line-height: 2;
 }
 
-.logo {
-
+.mdl-layout__header-row{
+    background-position:center center;
+    background-size:contain;
+    background-color:#fff !important;
     margin: 50px auto 0 auto;
     background: url('./assets/images/logo.png') no-repeat ; 
     width:360px; 

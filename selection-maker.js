@@ -18,7 +18,7 @@ class SelectionMaker extends BaseElement {
     }
     );
 
-    this.template();
+    //this.template();
 
   }
 
